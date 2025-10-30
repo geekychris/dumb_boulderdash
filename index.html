@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boulder Dash</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="gameContainer">
+        <div id="gameHeader">
+            <div id="gameInfo">
+                <div class="info-item">
+                    <span class="label">Level:</span>
+                    <span id="levelDisplay">1</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Diamonds:</span>
+                    <span id="diamondCount">0</span>
+                    <span>/</span>
+                    <span id="diamondTarget">10</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Time:</span>
+                    <span id="timeDisplay">150</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Score:</span>
+                    <span id="scoreDisplay">0</span>
+                </div>
+            </div>
+        </div>
+        
+        <canvas id="gameCanvas" width="640" height="480"></canvas>
+        
+        <div id="gameControls">
+            <div class="controls-section">
+                <h3>Controls:</h3>
+                <div class="control-info">
+                    <span>Arrow Keys: Move</span>
+                    <span>Space: Restart Level</span>
+                    <span>R: Reset Game</span>
+                </div>
+            </div>
+        </div>
+        
+        <div id="gameOverlay" class="overlay hidden">
+            <div id="startScreen" class="screen">
+                <h1>BOULDER DASH</h1>
+                <p>Collect all diamonds while avoiding falling rocks!</p>
+                <button id="startButton">Start Game</button>
+            </div>
+            
+            <div id="gameOverScreen" class="screen hidden">
+                <h2>Game Over!</h2>
+                <p id="gameOverMessage"></p>
+                <button id="restartButton">Try Again</button>
+            </div>
+            
+            <div id="levelCompleteScreen" class="screen hidden">
+                <h2>Level Complete!</h2>
+                <p id="levelCompleteMessage"></p>
+                <button id="nextLevelButton">Next Level</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="game.js"></script>
+</body>
+</html>
