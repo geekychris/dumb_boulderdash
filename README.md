@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="assets/logo.png" alt="Dumb Boulderdash logo" width="180">
+</p>
+
 # Boulder Dash Game
 
 A retro-style Boulder Dash game built with HTML5, CSS3, and JavaScript.
